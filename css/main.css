@@ -336,6 +336,66 @@ nav .nav__about-container a {
     font-size: 20px;
 }
 
+/**************************************************** PROFILE */
+.profile__main {
+    
+}
+.profile__about-me {
+    background-color: var(--gray-color);
+    padding: 50px 10%;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 50px;
+}
+.profile__about-me .profile__img-container img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+
+}
+.profile__about-me .profile__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.profile__about-me .profile__description h1{
+    font-size: 44px;
+}
+.profile__about-me .profile__description p{
+    font-size: 24px;
+}
+
+
+.profile__section-title{
+    padding: 50px 100px;
+    margin: 0 50px;
+    text-align: center;
+    border-bottom: 2px solid var(--gray-color);
+    font-size: 26px;
+}
+
+/* .profile__projects div {border: 1px solid black;} */
+
+.profile__projects {
+    width: 100%;
+    padding:50px 100px ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(250px, auto);
+    gap: 50px;
+}
+.profile__projects .profile__project-item {
+    padding: 50px;
+}
+.profile__projects .profile__project-item h3{
+    font-size: 24px;
+    margin: 0 0 20px; 
+}
+.profile__projects .profile__project-item p{
+    font-size: 20px;
+}
+
 
 
 
