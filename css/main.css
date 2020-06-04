@@ -6,6 +6,9 @@
     --main-font: "Roboto", sans-serif;
     --title-font: "Roboto Mono", monospace;
 }
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -21,6 +24,8 @@ body {
 }
 h1, h2, h3, p, figure {
     margin: 0;
+    font-size: inherit;
+    box-sizing: initial;
 }
 h1, h2, h3 {
     font-family: var(--title-font);
@@ -37,9 +42,6 @@ a {
     text-decoration: none;
     color: inherit;
     display: inline;
-}
-* {
-    box-sizing: border-box;
 }
 
 .inter-link:hover {
@@ -164,7 +166,7 @@ nav .nav__about-container a {
     margin: 0 auto;
     padding-bottom: 20px;
     display: grid;
-    column-gap: 100px;
+    column-gap: 70px;
     grid-template-rows: 50px 1fr;
     grid-template-columns: 2fr 1fr;
     font-family: var(--title-font);
@@ -226,13 +228,10 @@ nav .nav__about-container a {
 /**************************************************** BLOG ITEMS */
 .blogs__posts {
     width: 100%;
-    padding: 30px 100px;
+    /* padding: 30px 100px; */
     font-family: var(--title-font);
 }
 .blogs__posts-title {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     padding-top: 20px;
 }
 .blogs__posts-title h2{
@@ -249,7 +248,7 @@ nav .nav__about-container a {
     padding:50px 0 ;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: 30px;
 }
 .item{
     box-shadow: 2px 2px 16px -2px rgba(35,40,45,0.77);
@@ -293,7 +292,7 @@ nav .nav__about-container a {
 }
 .blog__cover-container img {
     object-fit: cover;
-    height: 750px;
+    height: 500px;
     width: 100%;
 }
 .blog__content {
@@ -312,7 +311,7 @@ nav .nav__about-container a {
 .blog__body p{
     font-size: 16px;
     letter-spacing: .7px;
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
 /****************************************** Contact */
@@ -447,9 +446,6 @@ footer {
     height: 100px;
     /* background-color: black; */
 }
-.footer__empty {
-    background-color: var(--green-color);
-}
 .footer__terms {
     display: flex;
     align-items: center;
@@ -459,5 +455,4 @@ footer {
     color: white;
     font-size: 24px;
     letter-spacing: 5px;
-    /* font-weight: thin; */
 }
